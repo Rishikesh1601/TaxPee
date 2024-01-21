@@ -33,7 +33,7 @@ const DeductionForm = () => {
                 <h1 className="titlepan text-4xl">Deductions</h1>
             </div>
     </div>
-    <div class="flex flex-col items-center justify-center h-screen3 heightChanges">
+    <div class="flex flex-col items-center justify-center h-screen3 heightChanges deductionFormChanges">
     <div class="w-full max-w-md bg-white rounded-lg shadow-md p-6 maxWidthChanges">
     <div>
       <div className='flex gap-16 text-center items-center justify-center'>
@@ -46,6 +46,20 @@ const DeductionForm = () => {
     </div>
     </div>
     </div>
+    <div className="flex items-center justify-center nichekbtns1 mb-5">
+        <div className="flex gap-4 w-1/2">
+            <Link to={"/eCA"} className="w-full">
+            <button type="submit" className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150 w-full">
+                GET CA
+            </button>
+            </Link>
+            <Link className="w-full">
+            <button type="submit" className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150 w-full">
+                Continue
+            </button>
+            </Link>
+        </div>
+      </div>
     </div>
   );
 };
@@ -280,8 +294,116 @@ const FormStep3 = () => {
 
 const FormStep4 = () => {
   return (
-    <div className='min-h-30rem'>
-      
+    <div className='pt-40'>
+    <form class="flex flex-col px-5 py-5">
+
+    <div className="flex gap-4">
+        <div className="">
+        <h3 className="text-sm">There are numerous funds and politics that can help save on tax which most people are unaware of. For all you know, there might already be a few that you've invested in without knowing how beneficial they actully are. We're here to help with that</h3>
+        </div>
+    </div>
+    <div className="flex">
+        <div className="flex gap-4">
+        <div className="w-full mt-3">
+            <label for="otherdeductions" class="block text-sm font-medium text-gray-700">Specify if any other</label>
+            <select id="otherdeductions" name="otherdeductions" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                <option value="" disabled selected>Please Select</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+            </select>
+        </div>
+        <div className="w-full mt-3">
+        <label for="otheramount" class="block text-sm font-medium text-gray-700">Amount</label>
+        <input id="otheramount" name="otheramount" type="number" placeholder="" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></input>
+        </div>
+        
+        </div>
+    </div>
+    <br></br>
+    <hr></hr>
+    <br></br>
+    <div className="flex gap-4">
+        <div className="">
+        <h3 className="text-xl font-bold">Section 80DD / 80U</h3>
+        </div>
+    </div>
+    <div className="flex">
+        <div className="flex gap-4">
+        <div className="w-full mt-3">
+            <label for="disabledmember" class="block text-sm font-medium text-gray-700">Disabled Member</label>
+            <select id="disabledmember" name="disabledmember" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                <option value="" disabled selected>Please Select Member</option>
+                <option value="t">x</option>
+                <option value="tt">y</option>
+            </select>
+          </div>
+        <div className="w-full mt-3">
+        <label for="totalexpondisabledmember" class="block text-sm font-medium text-gray-700">Total Expenditure</label>
+        <input id="totalexpondisabledmember" name="totalexpondisabledmember" type="number" placeholder="" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></input>
+        </div>    
+        </div>
+    </div>
+    <br></br>
+    <hr></hr>
+    <br></br>
+    <div className="flex gap-4">
+        <div className="">
+        <h3 className="text-xl font-bold">Section 80DDB</h3>
+        </div>
+    </div>
+    <div className="flex gap-4">
+        <div className="flex gap-4">
+        <div className="w-full mt-3">
+            <label for="diseasedcitizen" class="block text-sm font-medium text-gray-700">Diseased Citizen</label>
+            <select id="diseasedcitizen" name="diseasedcitizen" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                <option value="" disabled selected>Please Select Member</option>
+                <option value="tu">x</option>
+                <option value="ttu">y</option>
+            </select>
+          </div>
+        <div className="w-full mt-3">
+        <label for="totalexpeondiseased" class="block text-sm font-medium text-gray-700">Total Expenditure</label>
+        <input id="totalexpeondiseased" name="totalexpeondiseased" type="number" placeholder="" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></input>
+        </div>
+        </div>
+    </div> 
+    <br></br>
+    <hr></hr>
+    <br></br>
+    <div className="flex gap-4">
+        <div className="">
+        <h3 className="text-xl font-bold">Section 80E</h3>
+        </div>
+    </div>
+    <div className="flex gap-4">
+        <div className="flex gap-4"> 
+        <div className="w-full mt-3">
+        <label for="interestoneducationloan" class="block text-sm font-medium text-gray-700">Interest on Education Loan</label>
+        <input id="interestoneducationloan" name="interestoneducationloan" type="number" placeholder="" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></input>
+        </div>
+        </div>
+    </div> 
+    <br></br>
+    <hr></hr>
+    <br></br>
+    <div className="flex gap-4">
+        <div className="">
+        <h3 className="text-xl font-bold">Section 80GG</h3>
+        </div>
+    </div>
+    <div className="flex gap-4">
+        <div className="flex gap-4"> 
+        <div className="w-full mt-5">
+        <label for="rentpaid" class="block text-sm font-medium text-gray-700">Rent Paid For The Year</label>
+        <input id="rentpaid" name="rentpaid" type="number" placeholder="" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></input>
+        </div>
+        <div className="w-full mt-0">
+        <label for="rentpaidmonths" class="block text-sm font-medium text-gray-700">Number of months rent is paid for</label>
+        <input id="rentpaidmonths" name="rentpaidmonths" type="number" placeholder="" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></input>
+        </div>
+        </div>
+    </div> 
+    </form>      
     </div>
   );
 };
