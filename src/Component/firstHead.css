@@ -1,0 +1,39 @@
+.FirstHeadToLeft{
+    margin-left:75px;
+}
+.image1{
+    width: 25%;
+    margin-top: -30%;
+    position: relative;
+    left: 60%;
+    top: -90px;
+    z-index: 1;
+}
+.image2{
+    width: 18%;
+    margin-top: -30%;
+    position: relative;
+    left: 77%;
+    top: -122px;
+}
+.box{
+    border-radius:20px;
+}
+.box:hover{
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.allBoxes{
+    justify-content: center;
+}
+@media(max-width:768px){
+
+    .FirstHeadToLeft{
+        margin-left:0px;
+    }
+    .image1{
+        display: none;
+    }
+    .image2{
+        display: none;
+    }
+}
