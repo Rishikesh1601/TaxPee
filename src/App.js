@@ -12,6 +12,7 @@ import AddressHOC from "./HOC/address.hoc";
 import SalaryHOC from "./HOC/salary.hoc";
 import OtherIncomeHOC from "./HOC/otherincome.hoc";
 import DeductionHOC from "./HOC/deduction.hoc";
+import BankDetailsHOC from "./HOC/bankdetails.hoc";
 //import pages
 import HomePage from "./Page/home.page";
 import IncomeTaxCalculator from "./Component/Navbar/incomeTaxCalculate";
@@ -24,6 +25,7 @@ import AddressForm from "./Component/ITR_Filing/itr.fewmoredetails.component";
 import SalaryForm from "./Component/ITR_Filing/itr.salary.component";
 import OtherForm from "./Component/ITR_Filing/itr.incomeother.component";
 import DeductionForm from "./Component/ITR_Filing/itr.deduction.component";
+import BankDetailsForm from "./Component/ITR_Filing/itr.bankdetails.component";
 function App() {
   return (
     <>
@@ -39,6 +41,7 @@ function App() {
       <SalaryHOC path="/salaryForm" excat component={SalaryForm} />
       <OtherIncomeHOC path="/otherForm" excat component={OtherForm} />
       <DeductionHOC path="/deductionForm" excat component={DeductionForm} />
+      <BankDetailsHOC path="/bankdetailsForm" excat component={BankDetailsForm} />
     </div>
     
     </>
