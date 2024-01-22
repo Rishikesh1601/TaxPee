@@ -21,9 +21,8 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'File Your Return', description: 'File your returns in easy steps', href: '#', icon: CurrencyRupeeIcon },
-  { name: 'Upload Form 16', description: 'If have form 16 upload it here', href: '#', icon: DocumentArrowDownIcon },
-  { name: 'CA Assisted Tax Filing', description: 'We will provide ECA for your convinience', href: '#', icon: BriefcaseIcon },
+  { name: 'File Your Return', description: 'File your returns in easy steps', href: '/form16', icon: CurrencyRupeeIcon },
+  { name: 'CA Assisted Tax Filing', description: 'We will provide ECA for your convinience', href: '/eca', icon: BriefcaseIcon },
   { name: 'Refund Status', description: 'Check your refund status here', href: '#', icon: ArrowPathIcon },
   { name: 'Tax Advisory Services', description: 'All the services we provide', href: '#', icon: SquaresPlusIcon },
 ]

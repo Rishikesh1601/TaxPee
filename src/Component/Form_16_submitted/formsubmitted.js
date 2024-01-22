@@ -11,7 +11,7 @@ const FormSubmitted = () => {
             </path>
         </svg>
         <div class="text-center">
-            <h3 class="md:text-2xl text-base text-gray-900 font-semibold text-center">Your Form is Submitted!</h3>
+            <h3 class="md:text-2xl text-base text-gray-900 font-semibold text-center">Your Application is Submitted!</h3>
             <p class="text-gray-600 my-2">We will reach you soon through Email.</p>
             <p> Have a great day!  </p>
             <div class="py-10 text-center">

@@ -1,6 +1,6 @@
 import React from "react";
 import '../ITR_Filing/itr.first.component.css';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
     CheckBadgeIcon
   
@@ -33,19 +33,21 @@ const CA = () => {
 
                         <div className="">
                             <div className="w-full">
-                            <input id="Name" name="Name" type="text" placeholder="Full Name" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></input>
+                            <input id="Name" name="Name" type="text" placeholder="Full Name" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" required></input>
                             </div>
                             <div className="w-full">
-                            <input id="Email" name="Email" type="email" placeholder="Email Address" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></input>
+                            <input id="Email" name="Email" type="email" placeholder="Email Address" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" required></input>
                             </div>
                             <div class="w-full">
-                            <input id="mobile" name="mobile" type="number" placeholder="Mobile Number" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></input>
+                            <input id="mobile" name="mobile" type="number" placeholder="Mobile Number" class="mt-3 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" required></input>
                             </div> 
                         </div>
                         
 
                         <div>
-                        <button className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150 w-full">Book eCA Now</button>    
+                        <Link to={"/formSubmitted"} className="w-full">
+                        <button className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150 w-full">Book eCA Now</button>  
+                        </Link>  
                         </div>  
                         </form>
                         </div>
