@@ -13,6 +13,7 @@ import SalaryHOC from "./HOC/salary.hoc";
 import OtherIncomeHOC from "./HOC/otherincome.hoc";
 import DeductionHOC from "./HOC/deduction.hoc";
 import BankDetailsHOC from "./HOC/bankdetails.hoc";
+import PrepaidTaxesHOC from "./HOC/prepaidtaxe.hoc";
 //import pages
 import HomePage from "./Page/home.page";
 import IncomeTaxCalculator from "./Component/Navbar/incomeTaxCalculate";
@@ -26,6 +27,7 @@ import SalaryForm from "./Component/ITR_Filing/itr.salary.component";
 import OtherForm from "./Component/ITR_Filing/itr.incomeother.component";
 import DeductionForm from "./Component/ITR_Filing/itr.deduction.component";
 import BankDetailsForm from "./Component/ITR_Filing/itr.bankdetails.component";
+import PrepaidTaxesForm from "./Component/ITR_Filing/itr.prepaidtaxes.component";
 function App() {
   return (
     <>
@@ -42,6 +44,7 @@ function App() {
       <OtherIncomeHOC path="/otherForm" excat component={OtherForm} />
       <DeductionHOC path="/deductionForm" excat component={DeductionForm} />
       <BankDetailsHOC path="/bankdetailsForm" excat component={BankDetailsForm} />
+      <PrepaidTaxesHOC path="/prepaidtaxesForm" excat component={PrepaidTaxesForm} />
     </div>
     
     </>
