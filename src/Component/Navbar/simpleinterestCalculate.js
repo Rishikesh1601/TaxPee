@@ -21,7 +21,7 @@ const SimpleInterest = () => {
 
   const data = [
     { name: "Interest Earned", value: parseFloat(roundedTotalInterest) },
-    { name: "Total Amount Earned", value: parseFloat(totalAmount) - parseFloat(roundedTotalInterest) },
+    { name: "TPrincipal Amount", value: parseFloat(totalAmount) - parseFloat(roundedTotalInterest) },
   ];
 
   const COLORS = ["#b4f7b4", "#38c172"];

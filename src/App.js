@@ -18,6 +18,9 @@ import ItrDetailsHOC from "./HOC/itrdetails.hoc";
 import ComputationHOC from "./HOC/computation.hoc";
 import ITRfinishedHOC from "./HOC/itrfinish.hoc";
 import SimpleInterestHOC from "./HOC/simpleinterest.hoc";
+import ITRCheckHOC from "./HOC/itrcheck.hoc";
+import ItrFileSuccessHOC from "./HOC/fileitrsuccess.hoc";
+import ITRNotMandHOC from "./HOC/notnecessary.hoc";
 //import pages
 import HomePage from "./Page/home.page";
 import IncomeTaxCalculator from "./Component/Navbar/incomeTaxCalculate";
@@ -36,7 +39,9 @@ import ItrDetailsForm from "./Component/ITR_Filing/itr.itrdetails.component";
 import ComputationForm from "./Component/ITR_Filing/itr.computation.component";
 import ITRFinished from "./Component/ITR_Filing/itr.finish.component";
 import SimpleInterest from "./Component/Navbar/simpleinterestCalculate";
-
+import ITRCheck from "./Component/Navbar/itrcheck.component";
+import ItrFileSuccess from "./Component/Navbar/fileitrsuccess";
+import ITRNotMand from "./Component/Navbar/notnecessary";
 function App() {
   return (
     <>
@@ -58,6 +63,9 @@ function App() {
       <ComputationHOC path="/computationForm" excat component={ComputationForm} />
       <ITRfinishedHOC path="/itrdone" excat component={ITRFinished} />
       <SimpleInterestHOC path="/simpleInterest" excat component={SimpleInterest} />
+      <ITRCheckHOC path="/itrCheck" excat component={ITRCheck} />
+      <ItrFileSuccessHOC path="/fileitrsuccess" excat component={ItrFileSuccess} />
+      <ITRNotMandHOC path="/itrnotmandatory" excat component={ITRNotMand} />
     </div>
     
     </>

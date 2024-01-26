@@ -27,8 +27,8 @@ const products = [
   { name: 'Tax Advisory Services', description: 'All the services we provide', href: '#', icon: SquaresPlusIcon },
 ]
 const tools = [
-  { name: 'IncomeTax Calculator', description: 'Estimate your taxes before you file your tax return', href: './incomeTaxCalculator', icon: BanknotesIcon },
-  { name: 'ITR Eligibility Checker', description: 'Determine your Income Tax eligibility', href: '#', icon: CheckBadgeIcon },
+  { name: 'IncomeTax Calculator', description: 'Estimate your taxes before you file your tax return', href: '/incomeTaxCalculator', icon: BanknotesIcon },
+  { name: 'ITR Eligibility Checker', description: 'Determine your Income Tax eligibility', href: '/itrCheck', icon: CheckBadgeIcon },
   { name: 'TDS Calculator', description: 'Instant and Accurate TDS Calculations', href: '#', icon: CalculatorIcon },
   { name: 'Simple Interest Calculator', description: 'Calculate interest amount earned in your investments', href: '/simpleInterest', icon: ChartBarIcon },
   { name: 'Compound Interest Calculator', description: 'Calculate compound interest on your investments', href: '#', icon: ArrowTrendingUpIcon },
