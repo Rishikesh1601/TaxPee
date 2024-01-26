@@ -166,7 +166,7 @@ const Navbar = () => {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/pricing" className="text-sm font-semibold leading-6 text-gray-900">
             Pricing
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
