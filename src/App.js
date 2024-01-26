@@ -17,7 +17,7 @@ import PrepaidTaxesHOC from "./HOC/prepaidtaxe.hoc";
 import ItrDetailsHOC from "./HOC/itrdetails.hoc";
 import ComputationHOC from "./HOC/computation.hoc";
 import ITRfinishedHOC from "./HOC/itrfinish.hoc";
-// import CASubmittedHOC from "./HOC/ecasubmitted.hoc";
+import SimpleInterestHOC from "./HOC/simpleinterest.hoc";
 //import pages
 import HomePage from "./Page/home.page";
 import IncomeTaxCalculator from "./Component/Navbar/incomeTaxCalculate";
@@ -35,6 +35,7 @@ import PrepaidTaxesForm from "./Component/ITR_Filing/itr.prepaidtaxes.component"
 import ItrDetailsForm from "./Component/ITR_Filing/itr.itrdetails.component";
 import ComputationForm from "./Component/ITR_Filing/itr.computation.component";
 import ITRFinished from "./Component/ITR_Filing/itr.finish.component";
+import SimpleInterest from "./Component/Navbar/simpleinterestCalculate";
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
       <ItrDetailsHOC path="/itrdetailsForm" excat component={ItrDetailsForm} />
       <ComputationHOC path="/computationForm" excat component={ComputationForm} />
       <ITRfinishedHOC path="/itrdone" excat component={ITRFinished} />
+      <SimpleInterestHOC path="/simpleInterest" excat component={SimpleInterest} />
     </div>
     
     </>

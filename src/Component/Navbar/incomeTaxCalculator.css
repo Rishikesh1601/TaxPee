@@ -9,3 +9,10 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.piechartadjustsimpleinterest{
+  position:relative;
+  left:-70px;
+  top:40px;
+  margin-top:40px;
+}
