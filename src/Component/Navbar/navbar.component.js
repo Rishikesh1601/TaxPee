@@ -31,7 +31,7 @@ const tools = [
   { name: 'ITR Eligibility Checker', description: 'Determine your Income Tax eligibility', href: '/itrCheck', icon: CheckBadgeIcon },
   { name: 'TDS Calculator', description: 'Instant and Accurate TDS Calculations', href: '/tdscalculate', icon: CalculatorIcon },
   { name: 'Simple Interest Calculator', description: 'Calculate interest amount earned in your investments', href: '/simpleInterest', icon: ChartBarIcon },
-  { name: 'Compound Interest Calculator', description: 'Calculate compound interest on your investments', href: '#', icon: ArrowTrendingUpIcon },
+  { name: 'Compound Interest Calculator', description: 'Calculate compound interest on your investments', href: '/compoundInterest', icon: ArrowTrendingUpIcon },
 ]
 const callsToAction = [
   { name: 'Watch Demo', href: '#', icon: PlayCircleIcon },

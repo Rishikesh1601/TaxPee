@@ -22,6 +22,7 @@ import ITRCheckHOC from "./HOC/itrcheck.hoc";
 import ItrFileSuccessHOC from "./HOC/fileitrsuccess.hoc";
 import ITRNotMandHOC from "./HOC/notnecessary.hoc";
 import TdsCalculatorHOC from "./HOC/tdscalculator.hoc";
+import CompoundInterestHOC from "./HOC/compountinterest.hoc";
 //import pages
 import HomePage from "./Page/home.page";
 import IncomeTaxCalculator from "./Component/Navbar/incomeTaxCalculate";
@@ -44,6 +45,7 @@ import ITRCheck from "./Component/Navbar/itrcheck.component";
 import ItrFileSuccess from "./Component/Navbar/fileitrsuccess";
 import ITRNotMand from "./Component/Navbar/notnecessary";
 import TdsCalculator from "./Component/Navbar/tdscalculator";
+import CompoundInterest from "./Component/Navbar/compoundinterestcalculator";
 function App() {
   return (
     <>
@@ -69,6 +71,7 @@ function App() {
       <ItrFileSuccessHOC path="/fileitrsuccess" excat component={ItrFileSuccess} />
       <ITRNotMandHOC path="/itrnotmandatory" excat component={ITRNotMand} />
       <TdsCalculatorHOC path="/tdscalculate" excat component={TdsCalculator} />
+      <CompoundInterestHOC path="/compoundInterest" excat component={CompoundInterest} />
     </div>
     
     </>
